@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class Activity2 extends AppCompatActivity {
@@ -19,8 +19,8 @@ public class Activity2 extends AppCompatActivity {
         Button btn2_1 = findViewById(R.id.button2_1);
         Button Logar = findViewById(R.id.btn_logar);
 
-        TextView Nome = findViewById(R.id.login_name);
-        TextView Senha = findViewById(R.id.senha);
+        EditText Nome = findViewById(R.id.login_name);
+        EditText Senha = findViewById(R.id.senha);
         btn2_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +18,11 @@ public class DashBoard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
 
-        /* btn_sair = findViewById(R.id.btn_sair);
+        Button btn_sair = findViewById(R.id.btn_sair);
+        Button Soma = findViewById(R.id.btn_soma);
+        Button Azul = findViewById(R.id.btn_menos);
+
+        TextView Resultado = findViewById(R.id.Resultado);
 
         btn_sair.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +32,22 @@ public class DashBoard extends AppCompatActivity {
             }
         });
 
-         */
+        Soma.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                 Resultado.setText("Vermelho ❤️");
+            }
+        });
+
+        Azul.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Resultado.setText("Azul 💙");
+            }
+        });
+
+
     }
 }

@@ -13,16 +13,16 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="240dp"
         android:layout_height="11dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:progress="90"
         android:progressTint="#7923F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sair" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_sair"
         android:layout_width="219dp"
         android:layout_height="62dp"
         android:text="Deslogar"
@@ -34,48 +34,76 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="312dp"
-        android:layout_height="46dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Seja Bem Vindo(a):"
+        android:layout_width="42dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="sans-serif"
+        android:text="olá,"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="51dp" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="91dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="217dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="sans-serif-black"
-        android:text="Admin"
+        android:text="Admin 👋"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="28dp" />
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_menos"
         android:layout_width="144dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
-        android:text="Button"
+        android:text="Azul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_soma"
         android:layout_width="144dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        android:text="Vermelho"
+        app:layout_constraintEnd_toStartOf="@+id/btn_menos"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Seu Lado da Força:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Pontos"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

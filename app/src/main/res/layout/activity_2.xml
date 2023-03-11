@@ -22,41 +22,49 @@
 
     <Button
         android:id="@+id/btn_logar"
-        android:layout_width="204dp"
-        android:layout_height="58dp"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="24dp"
         android:text="Logar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/senha" />
 
     <EditText
         android:id="@+id/senha"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
         android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="#6216E8"
+        android:backgroundTintMode="add"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_name" />
 
     <EditText
         android:id="@+id/login_name"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="#6216E7"
+        android:backgroundTintMode="add"
         android:ems="10"
         android:hint="Nome"
-        android:textColor="#FFFFFF"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FDFDFD"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -79,16 +87,19 @@
 
     <Button
         android:id="@+id/button2_1"
-        android:layout_width="94dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTintMode="add"
         android:text="Voltar"
         android:textSize="12sp"
         app:iconTint="#673AB7"
         app:iconTintMode="add"
+        app:layout_constraintEnd_toStartOf="@+id/btn_logar"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
